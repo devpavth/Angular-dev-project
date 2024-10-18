@@ -1,6 +1,6 @@
 # Angular Dev Project
 
-This is an Angular-based project created as part of my internship tasks. It includes a test application with various features like suggesting friends with common interests, along with other dynamic components and features developed using Angular.
+This is an Angular-based project created as part of my internship tasks. It includes a various features like suggesting friends with common interests, along with other dynamic components and features developed using Angular.
 
 ## Installation
 
