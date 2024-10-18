@@ -1,0 +1,114 @@
+.notificationTitle{
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.notifyCloseBtn{
+    font-size: 40px;
+    margin-right: 12px;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.notifyCloseBtn:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+ion-avatar {
+    --border-radius: 4px;
+}
+
+ion-avatar img {
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+  
+ion-item {
+    --min-height: 70px; 
+}
+
+ion-item:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.unread-notification {
+    background-color: #ffe6e6; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease;
+}
+
+.unread-notification:hover {
+    background-color: #ffcccc; 
+}
+
+.notification-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+  
+.notification-content p {
+    margin: 0;
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.5em; 
+}
+  
+.time-and-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-right: 18px;
+}
+  
+.time {
+    color: #666;
+    font-size: 1rem;
+    white-space: nowrap;
+    padding-right: 5px;
+}
+
+.notifyThreeDot {
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.notifyThreeDot:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+
+.popover-class {
+    --width: 200px;
+    --max-height: 100px;
+}
+  
+
+ion-button {
+    --padding-end: 12px;
+}
+  
+ion-label{
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-left: 25px;
+}
+  
+ion-divider {
+    margin: 10px 0; 
+    height: 5px; 
+    background-color: #ccc; 
+    opacity: 1;
+}
