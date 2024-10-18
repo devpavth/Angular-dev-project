@@ -1,0 +1,38 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Customize Your Feed</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cancel()">Cancel</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="prompt">
+    <div class="header">
+      <ion-icon name="arrow-back-outline" (click)="cancel()" class="close-icon"></ion-icon>
+      <h2>What are you interested in?</h2>
+      <p class="customizeText">This will customize your new home feed</p>
+    </div>
+    <div class="categories">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6" *ngFor="let category of categories">
+            <ion-card (click)="toggleCategory(category.name)" [class.selected]="selectedCategories.includes(category.name)">
+              <ion-card-header>
+                <div class="image-container">
+                  <img [src]="category.image" alt="{{category.name}}">
+                  <ion-card-title>{{category.name}}</ion-card-title>
+                </div>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div class="belowButton">
+      <ion-button expand="full" (click)="openSuggestionsModal()" [disabled]="selectedCategories.length !== 3" class="fixed-button">Next</ion-button>
+      <p class="dynamic-text">{{ getDynamicText() }}</p>
+    </div>
+  </div>
+</ion-content>
