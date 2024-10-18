@@ -1,0 +1,16 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  
+}
+
+ion-button {
+  --background: #FF3131; 
+  --color: white; 
+  width: 200px;
+  --border-radius: 35px;
+  font-family: Arial, sans-serif; 
+  font-weight: 600;
+}
