@@ -1,0 +1,7 @@
+{
+  "name": "suggest-interest-friends",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
