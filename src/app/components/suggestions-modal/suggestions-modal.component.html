@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Suggestions for You</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon class="header-close-icon" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="suggestions-container">
+    <ion-card *ngFor="let suggestion of suggestions">
+      <ion-card-header>
+        <ion-avatar>
+          <img [src]="suggestion.profileImage" alt="Profile Image" class="profile-image">
+        </ion-avatar>
+        <ion-card-title>{{suggestion.name}}</ion-card-title>
+        <p class="subtitle-username">{{suggestion.username}}</p>
+        <p class="subtitle-followed">Friend with {{suggestion.followedBy}}</p>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button (click)="addFriend(suggestion)" class="add-friend-button" fill="clear">
+          <ion-icon name="person-add" class="add-friend-icon"></ion-icon>
+          Add Friend
+        </ion-button>
+      </ion-card-content>
+      <ion-icon class="close-icon" name="close-outline" (click)="removeSuggestion(suggestion)"></ion-icon>
+    </ion-card>
+  </div>
+</ion-content>
